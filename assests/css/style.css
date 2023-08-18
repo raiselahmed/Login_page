@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/assests/images/bg.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgba(70, 67, 67, 0.7);
+  bottom: 0;
+  z-index: -1;
+}
+
+
+/* nav btn */
+.navbar-brand {
+  color: #fff !important;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar .navbar-brand:hover {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: bolder;
+}
+
+.sng-button .btn {
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  border: none;
+
+}
+
+.sng-button .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* hero section */
+.tp a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s;
+}
+.tp a:hover{
+  color: #f84e4e !important;
+}
+h2.px-5 {
+  padding: 10px 0;
+}
+
+.form-control {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.form-control:hover,
+.form-control:focus:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.form-group input::placeholder {
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form-floating label {
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(3.5rem + -6px) !important;
+  line-height: 1.25;
+}
+
+.form-floating i {
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  color: #fff;
+}
+
+.form-floating label {
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 40px;
+  margin-top: -4px;
+}
+
+.form-floating .form-control {
+  padding: 0 10px 0 45px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  margin-top: 10px;
+}
+
+.two-col .one {
+  display: flex;
+  gap: 5px;
+}
+
+.two label a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.two label a:hover {
+  text-decoration: underline;
+}
+
+.login-wrap .social a {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #000;
+  background: #fff;
+}
+
+.login-wrap .social a:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.login-wrap .social a {
+  width: 40% !important;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #000;
+  text-decoration: none;
+}
+
+.login-wrap p {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* modal */
+
+.two-forms {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group i {
+  position: relative;
+  top: 32px;
+  left: 17px;
+  color: #fff;
+}
+
+.form-group button {
+  background: #ffbc98 !important;
+  border: 1px solid #eaa47f !important;
+  color: #000 !important;
+}
+
+.form-group button:hover {
+  background: #f84e4e !important;
+}
+
+.form-floating .form-control {
+  padding: 0 16px 0 45px;
+}
+
+@media only screen and (max-width: 540px) {
+  .two-forms {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.modal-content .modal-header {
+  /* padding-right: 20px !important ; */
+  padding: 20px 20 20 0 !important;
+  border: none;
+}
+
+.modal-content {
+  background: #656668;
+  filter: blur(6);
+  z-index: 9999;
+}
