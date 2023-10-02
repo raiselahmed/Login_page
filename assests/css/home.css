@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+#preload{
+    background-image: url(/assests/images/giphy.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    z-index: 9998;
+}
